@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>
+            Good Morning
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function handleTemperatureChange() {
+                const temperature = document.getElementById("temperature").value
+                const height = parseFloat(temperature) + 33
+                document.getElementById("div3").innerText = height
+            }
+        </script>
+    </head>
+    <body>
+        
+        <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                    <h2 class="logo">
+                        Math Calculator  
+                    </h2>
+                    <h3>
+                    </h3>
+                </div>
+                <div class="menu">
+                    
+                    <ul> 
+                        <li>
+                            <a href="#">Time Calculator </a></li>
+                            <li><a href="#">Age Calculator </a></li>
+                            <li><a href="#">Calories Calculator </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           
+        </div>
+        <input type="number" id="temperature" onchange="handleTemperatureChange()"></input>
+        <div id="div3"></div>
+    </body>
+</html>
