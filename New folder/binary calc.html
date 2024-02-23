@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>
+            Binary Calculator
+        </title>
+        <script src="binary calc.js"></script>
+        <link rel="stylesheet" href="binary calc.css">
+    </head>
+    <body>
+        <div class="Container">
+            <div class="calculator">
+                <h1>
+                    Binary Calculator 
+                </h1>
+                    <form>
+                        <div class="Display">
+                            <input type="text" name="display">
+                        </div>
+                        <div>
+                        <input type="button" value="0" onclick="display.value+='0'">
+                        <input type="button" value="1" onclick="display.value+='1'">
+                        <input type="button" value="AC" onclick="display.value=' '" class="operator">
+                        <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
+                        </div>
+                        <div>
+                        <input type="button" value="+" onclick="display.value+='+' " class="operator">
+                        <input type="button" value="-" onclick="display.value+='-'" class="operator">
+                        <input type="button" value="/" onclick="display.value+='/'" class="operator">
+                        </div>
+                        <div>
+                        <input type="button" value="*" onclick="display.value+='*'" class="operator">
+                        <input type="button" class="operator" onclick="calculate()" value="=">
+                        </div>
+                    </form>
+                    <div class="menu">
+                    
+                        <ul> 
+                            <div class="ul"></div>
+                            
+                                
+                                <li><a href="https://abdelrahmans00.github.io/">Simple Calculator </a></li>
+                                <li><a href="#">Age Calculator </a></li>
+                                <li><a href="#">Calories Calculator </a></li>
+                            
+                            </div>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </body>
+
+
+
+
